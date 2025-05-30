@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Bet With Justin</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <div class="max-w-xl mx-auto p-6 mt-10 bg-white rounded-2xl shadow-xl">
-    <h1 class="text-3xl font-bold text-center mb-6">📲 Place Your Football Bet</h1>
+<body class="bg-gray-100 text-gray-900 p-6">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold text-center mb-4">📱 Place Your Football Bet</h1>
 
     <div class="text-center mb-6">
-      <p class="text-lg">Step 1: Send Your Bet Money</p>
-      <a href="https://cash.app/$YourCashTag" target="_blank" class="block mt-2 text-2xl text-green-600 font-bold">
-        $YourCashTag
-      </a>
-      <p class="text-sm text-gray-600 mt-1">Tap above to open Cash App</p>
+      <p class="text-lg font-semibold text-red-600">⚠️ Cash App payments not yet available.</p>
+      <p class="text-sm text-gray-600 mt-2">Please check back later for payment instructions.</p>
     </div>
 
     <hr class="my-6" />
 
-    <p class="text-center text-lg mb-4">Step 2: Submit Your Bet Details</p>
+    <p class="text-center text-lg mb-4">Step 1: Submit Bet Details Below</p>
 
-    <form action="https://formsubmit.co/reidjustin150@gmail.com" method="POST" class="space-y-4">
+    <form action="https://formsubmit.co/reidjustin150@gmail.com" method="POST">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://thankyou-page.com">
+      <input type="hidden" name="_next" value="https://thankyoupage.com">
 
-      <div>
-        <label class="block text-sm font-medium">Your Name</label>
-        <input type="text" name="name" class="w-full mt-1 p-2 border rounded-md" placeholder="John Doe" required />
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1" for="name">Your Name</label>
+        <input type="text" name="name" id="name" class="w-full border border-gray-300 p-2 rounded" required>
       </div>
 
-      <div>
-        <label class="block text-sm font-medium">Football Match</label>
-        <input type="text" name="match" class="w-full mt-1 p-2 border rounded-md" placeholder="Man City vs Real Madrid" required />
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1" for="match">Match Details</label>
+        <input type="text" name="match" id="match" class="w-full border border-gray-300 p-2 rounded" required>
       </div>
 
-      <div>
-        <label class="block text-sm font-medium">Bet Type</label>
-        <input type="text" name="bet_type" class="w-full mt-1 p-2 border rounded-md" placeholder="Team to win, Scoreline, etc." required />
+      <div class="mb-6">
+        <label class="block text-sm font-medium mb-1" for="amount">Amount You Would Send</label>
+        <input type="text" name="amount" id="amount" class="w-full border border-gray-300 p-2 rounded" required>
       </div>
 
-      <div>
-        <label class="block text-sm font-medium">Bet Amount ($)</label>
-        <input type="number" name="amount" class="w-full mt-1 p-2 border rounded-md" placeholder="25" required />
-      </div>
-
-      <div>
-        <label class="block text-sm font-medium">Odds (optional)</label>
-        <input type="text" name="odds" class="w-full mt-1 p-2 border rounded-md" placeholder="2.75" />
-      </div>
-
-      <div>
-        <label class="block text-sm font-medium">Contact Info</label>
-        <input type="text" name="contact" class="w-full mt-1 p-2 border rounded-md" placeholder="Email or phone" />
-      </div>
-
-      <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold">
-        Submit Bet Info
+      <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">
+        Submit Bet
       </button>
     </form>
-
-    <p class="text-xs text-gray-500 mt-6 text-center">
-      By submitting, you agree that all bets are placed at your own risk. No guaranteed returns or refunds. You must be 18+.
-    </p>
   </div>
 </body>
 </html>
